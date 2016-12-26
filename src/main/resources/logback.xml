@@ -9,11 +9,10 @@
 	</appender>
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${user.home}/sentry/logs/sentry.log</file>
+		<file>${user.home}/nuntius/logs/nuntius.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
-			<fileNamePattern>${user.home}/sentry/logs/sentry.%d{yyyy-MM-dd}.%i.log
-			</fileNamePattern>
+			<fileNamePattern>${user.home}/nuntius/logs/nuntius.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy
 				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<maxFileSize>10MB</maxFileSize>
@@ -26,7 +25,7 @@
 			<pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n </pattern>
 		</encoder>
 	</appender>
-	<logger name="com.leantaas.sentry.server" level="debug" additivity="false">
+	<logger name="in.ukd.nuntius" level="debug" additivity="false">
 		<appender-ref ref="FILE" />
 	</logger>
 	<logger name="org.springframework" level="info" additivity="false">
