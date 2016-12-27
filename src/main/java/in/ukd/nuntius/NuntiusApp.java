@@ -12,5 +12,5 @@ public class NuntiusApp {
 		LOG.info("========== Starting Nuntius ==========");
 		SpringApplication.run(NuntiusApp.class);
 	}
-
+	
 }
