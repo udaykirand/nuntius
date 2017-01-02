@@ -1,4 +1,4 @@
-package in.ukd.nuntius.service.impl;
+package in.ukd.nuntius.service;
 
 public class AbstractNuntiusService {
 

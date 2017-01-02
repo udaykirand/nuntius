@@ -1,6 +1,6 @@
 package in.ukd.nuntius.model;
 
-public enum ResultStatus {
+public enum ResponseStatus {
 
 	SUCCESS,
 	FAILURE

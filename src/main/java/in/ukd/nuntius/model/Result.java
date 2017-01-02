@@ -2,7 +2,7 @@ package in.ukd.nuntius.model;
 
 public class Result {
 
-	private ResultStatus status;
+	private ResponseStatus status;
 
 	private String message;
 	
@@ -10,7 +10,7 @@ public class Result {
 
 	private Object data;
 
-	public Result(ResultStatus status, String message, Object data) {
+	public Result(ResponseStatus status, String message, Object data) {
 		this.status = status;
 		this.message = message;
 		this.data = data;
@@ -32,11 +32,11 @@ public class Result {
 		this.error = error;
 	}
 
-	public ResultStatus getStatus() {
+	public ResponseStatus getStatus() {
 		return status;
 	}
 
-	public void setStatus(ResultStatus status) {
+	public void setStatus(ResponseStatus status) {
 		this.status = status;
 	}
 
